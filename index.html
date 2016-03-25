@@ -18,37 +18,56 @@
       <p>Take our quiz to find out!</p>
     </div>
 
-
-    <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide jumbotron">
-      <div class="container-j">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <h1>Where in the world will you travel?</h1>
-              <p class="lead">Take our quiz to find out!</p>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/disney.jpg" width='100%'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Will it be Walt Disney World<span id="copy">&copy;</span>?</h1>
+              <p>The happiest place on earth!</p>
+            </div>
           </div>
-          <div class="item">
-            <h1>Will it be to a Mayan Temple?</h1>
-              <p class="lead">Discover Olmec's treasures in this hidden temple!</p>
+        </div>
+        <div class="item">
+          <img src="img/temple.jpg" width="100%">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Will it be a Mayan temple?</h1>
+              <p>Find treasures in Olmec's "Hidden" Temple!</p>
+            </div>
           </div>
-          <div class="item">
-            <h1>Will it be Disney World&copy;</h1>
-              <p class="lead">The happiest place on earth!</p>
-              <!-- <p><a class="btn btn-success btn-lg" href="#">Get out in nature!</a></p> -->
+        </div>
+        <div class="item">
+          <img src="img/moon.jpg" width="100%">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Will you travel to the moon?</h1>
+              <p>No. But we hear there is an actual place called Jupiter, Florida. So there's that.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="icon-prev"></span>
+      </a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="icon-next"></span>
       </a>
     </div>
+
+
+
 
     <div class="container">
       <form>

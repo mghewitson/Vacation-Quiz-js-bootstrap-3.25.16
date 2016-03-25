@@ -20,16 +20,37 @@ button {
 
 .col-xs-6{
   text-align: center;
+  font-family: "helvetica", sans-serif;
 }
 
 /* Jumbotron
 ===========================================*/
 .jumbotron {
   height: 500px;
+  text-align: center;
+}
+#myCarousel img {
+  height: 700px;
 }
 
+#myCarousel h1 {
+  font-size: 80px;
+  text-shadow: 7px 7px black;
+}
+
+#myCarousel p {
+  font-size: 35px;
+}
+
+}
 .carousel-inner {
-  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+
+#copy {
+  font-size: 20px;
+  vertical-align: text-top;
 }
 
 .bodycontainer {
@@ -59,12 +80,7 @@ button {
 
 }
 
-img{
-  height: 500px;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .resultsLoc{
   padding-top: 50px;
