@@ -1,30 +1,33 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     var points = 0;
-    var point = parseInt($("option").val());
+    // var point = parseInt($("option").val());
     var result = parseInt($("#gender").val());
     points += result;
+
     result = parseInt($("#candy").val());
     points += result;
+
     result = parseInt($("#future").val());
     points += result;
+
     result = parseInt($("#pres").val());
     points += result;
 
-    if (point = 0){
-      addClass(".has-error");
+    result = parseInt($("input:radio[name=country]:checked").val());
+    points += result;
+
+    if (points === 5){
+      $("#answer1").show();
 }
-    if (points === 4){
-      $("div#answer3").show(".hidden-sloth");
+    if (points > 5 && points < 11){
+      $("#answer2").show();
 }
-    if (points >4 && points < 7){
-      $("div#answer1").show(".hidden-character");
+    if (points > 11 && points < 15){
+      $("#answer3").show();
 }
-    if (points > 7 && points < 12){
-      $("div#answer2").show(".hidden-celeb1");
-}
-    if (points > 11 && points < 16){
-      $("div#answer4").show(".hidden-celeb2");
+    if (points > 15 && points < 20){
+      $("#answer4").show();
 }
     event.preventDefault();
   });

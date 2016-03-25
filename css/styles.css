@@ -18,17 +18,17 @@ button {
   font-family: cursive;
 }
 
-.col-xs-6{
-  text-align: center;
+.col-sm-6, .col-sm-12{
   font-family: "helvetica", sans-serif;
 }
 
-/* Jumbotron
-===========================================*/
-.jumbotron {
-  height: 500px;
-  text-align: center;
+#radio {
+  margin: auto;
+  width: 60%;
 }
+
+/* Carousel
+===========================================*/
 #myCarousel img {
   height: 700px;
 }
@@ -66,21 +66,19 @@ button {
 }
 
 .carousel-indicators .active {
-  background-color: #222;
+  background-color: white;
 }
 
 .carousel-indicators li {
-  border-color: #222;
+  border-color: hotpink;
+
 }
 
 /* Quiz Results
 ===========================================*/
-.hidden-sloth, .hidden-character, .hidden-celeb1, .hidden-celeb2{
+#answer1, #answer2, #answer3, #answer4 {
   display: none;
-
 }
-
-
 
 .resultsLoc{
   padding-top: 50px;
@@ -88,4 +86,9 @@ button {
   width: 75%;
   padding: 10px;
   text-align: center;
+}
+
+.resultsLoc img {
+  width: 750px;
+  height: 500px;
 }

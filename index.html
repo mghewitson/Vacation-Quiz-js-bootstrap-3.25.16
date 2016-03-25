@@ -52,7 +52,7 @@
             <div class="carousel-caption">
               <h1>Will you travel to the moon?</h1>
               <p>No. But we hear there is an actual place called Jupiter, Florida. So there's that.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+              <!-- <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p> -->
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
     <div class="container">
       <form>
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <h3>What is your gender?</h3>
             <select class="form-control" id="gender">
               <option value="0">- - Select - -</option>
@@ -82,19 +82,19 @@
             </select>
           </div>
 
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <h3>What is your favorite candy?</h3>
             <select class="form-control" id="candy">
               <option value="0">- - Select - -</option>
-              <option value="3">PB Cups</option>
+              <option value="3">Peanut Butter Cups</option>
               <option value="2">Chocolate, Straight up!</option>
               <option value="1">Baby Ruth</option>
               <option value="4">Twizzlers</option>
-              <option value="5">Gross, Sugar..</option>
+              <option value="5">I haven't eaten sugar in months!</option>
             </select>
           </div>
 
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <h3>Where do you see yourself in 5 years?</h3>
             <select class="form-control" id="future">
               <option value="0">- - Select - -</option>
@@ -105,7 +105,7 @@
             </select>
           </div>
 
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <h3>Which presidential candidate do you like most?</h3>
             <select class="form-control" id="pres">
               <option value="0">- - Select - -</option>
@@ -118,35 +118,67 @@
           </div>
         </div>
 
+        <div id="radio" class="col-sm-12">
+          <h3>How many countries have you been to?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="country" value="1" checked>
+              1
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="country" value="2">
+              2-4
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="country" value="3">
+              5-7
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="country" value="4">
+              All of them.
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-12">
           <button type="submit" class="btn btn-lg btn-success center-block">Show me the results!</button>
+        </div>
       </form>
     </div>
+
+  <!-- Results -->
+
     <div class="container resultsLoc">
       <div>
         <div id="answer1" class="hidden-character">
-          <h2>You got Glenn Beck!</h2>
-          <img src="img/beck.jpg" alt="Glenn Beck crying" />
+          <h2>You're going to Disney World!</h2>
+          <img src="img/disney-logo.jpg" alt="disney world logo"/>
         </div>
       </div>
 
       <div>
-        <div id="answer2" class="hidden-celeb1">
-          <h2>You got Matt Damon!</h2>
-          <img src="img/damon.jpg" alt="a photo of matt damon" />
+        <div id="answer2" class="hidden-destination1">
+          <h2>You're going to jail!</h2>
+          <img src="img/jail.jpg" alt="a photo of jail"/>
         </div>
       </div>
 
       <div>
-        <div id="answer3" class="hidden-sloth">
-          <h2>Hey you guys!</h2>
-          <img src="img/sloth.jpg" alt="a photo of sloth" />
+        <div id="answer3" class="hidden-destination2">
+          <h2>You're going to the Phantom Zone!</h2>
+          <img src="img/phantom.jpg" alt="a photo of the phantom zone"/>
         </div>
       </div>
 
       <div>
-        <div id="answer4" class="hidden-celeb2">
-          <h2>You got Mark Wahlberg!</h2>
-          <img src="img/wahlberg.jpg" alt="a photo of mark wahlberg" />
+        <div id="answer4" class="hidden-destination3">
+          <h2>You're going to the beach!</h2>
+          <img src="img/beach.jpg" alt="a photo of the beach film poster"/>
         </div>
       </div>
 
