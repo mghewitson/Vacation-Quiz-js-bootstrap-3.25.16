@@ -1,5 +1,9 @@
 /* Heading
 ===========================================*/
+body {
+  background-color: #a0a0a0;
+}
+
 .heading h1{
   text-align: center;
   font-size: 175px;
@@ -10,6 +14,7 @@
   font-size: 50px;
   text-align: center;
   font-family: "helvetica", sans-serif;
+  padding-bottom: 20px;
 }
 
 button {
@@ -20,6 +25,12 @@ button {
 
 .col-sm-6, .col-sm-12{
   font-family: "helvetica", sans-serif;
+}
+
+@media (max-width: 767px) {
+  form {
+    text-align: center;
+  }
 }
 
 #radio {
@@ -74,10 +85,20 @@ button {
 
 }
 
+.form-control {
+  max-width: 95%;
+}
+
 /* Quiz Results
 ===========================================*/
 #answer1, #answer2, #answer3, #answer4 {
   display: none;
+}
+
+@media (max-width: 767px) {
+#answer1, #answer2, #answer3, #answer4 h2 {
+    text-align: center;
+  }
 }
 
 .resultsLoc{
@@ -91,4 +112,6 @@ button {
 .resultsLoc img {
   width: 750px;
   height: 500px;
+  border-radius: 100%;
+  margin: auto;
 }
